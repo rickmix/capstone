@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.capstone.LoginScreen"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/screen_login">
+        <action
+            android:id="@+id/action_FirstFragment_to_setUserDetails"
+            app:destination="@id/setUserDetails" />
+        <action
+            android:id="@+id/action_FirstFragment_to_homeScreen"
+            app:destination="@id/homeScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.example.capstone.HomeScreen"
+        android:label="fragment_home_screen"
+        tools:layout="@layout/fragment_home_screen" >
+        <action
+            android:id="@+id/action_homeScreen_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_homeScreen_to_contactList"
+            app:destination="@id/contactList" />
+        <action
+            android:id="@+id/action_homeScreen_to_setUserDetails"
+            app:destination="@id/setUserDetails" />
+        <action
+            android:id="@+id/action_homeScreen_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactList"
+        android:name="com.example.capstone.ContactList"
+        android:label="fragment_contact_list"
+        tools:layout="@layout/fragment_contact_list" >
+        <action
+            android:id="@+id/action_contactList_to_homeScreen"
+            app:destination="@id/homeScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/setUserDetails"
+        android:name="com.example.capstone.SetUserDetails"
+        android:label="fragment_set_user_details"
+        tools:layout="@layout/fragment_set_user_details" >
+        <action
+            android:id="@+id/action_setUserDetails_to_homeScreen"
+            app:destination="@id/homeScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.capstone.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/action_chatFragment_to_homeScreen"
+            app:destination="@id/homeScreen" />
+    </fragment>
+</navigation>
