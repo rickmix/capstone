@@ -2,12 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="720c234e-f6a8-4561-bded-2d0258c70fcf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/capstone/ChatFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/capstone/ChatFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/capstone/ChatRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/capstone/ChatRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/capstone/ChatRoomDatabase.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/capstone/HomeScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/capstone/HomeScreen.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/capstone/LoginScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/capstone/LoginScreen.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/capstone/UserRoomDatabase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/capstone/UserRoomDatabase.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,21 +124,21 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1429" height="296" key="GridCell.Tab.0.bottom" timestamp="1609319782726">
+    <state width="1878" height="296" key="GridCell.Tab.0.bottom" timestamp="1609322546806">
       <screen x="0" y="25" width="1920" height="1083" />
     </state>
-    <state width="1429" height="296" key="GridCell.Tab.0.bottom/0.25.1920.1083@0.25.1920.1083" timestamp="1609319782726" />
-    <state width="1429" height="296" key="GridCell.Tab.0.center" timestamp="1609319782725">
+    <state width="1878" height="296" key="GridCell.Tab.0.bottom/0.25.1920.1083@0.25.1920.1083" timestamp="1609322546806" />
+    <state width="1878" height="296" key="GridCell.Tab.0.center" timestamp="1609322546805">
       <screen x="0" y="25" width="1920" height="1083" />
     </state>
-    <state width="1429" height="296" key="GridCell.Tab.0.center/0.25.1920.1083@0.25.1920.1083" timestamp="1609319782725" />
-    <state width="1429" height="296" key="GridCell.Tab.0.left" timestamp="1609319782725">
+    <state width="1878" height="296" key="GridCell.Tab.0.center/0.25.1920.1083@0.25.1920.1083" timestamp="1609322546805" />
+    <state width="1878" height="296" key="GridCell.Tab.0.left" timestamp="1609322546805">
       <screen x="0" y="25" width="1920" height="1083" />
     </state>
-    <state width="1429" height="296" key="GridCell.Tab.0.left/0.25.1920.1083@0.25.1920.1083" timestamp="1609319782725" />
-    <state width="1429" height="296" key="GridCell.Tab.0.right" timestamp="1609319782726">
+    <state width="1878" height="296" key="GridCell.Tab.0.left/0.25.1920.1083@0.25.1920.1083" timestamp="1609322546805" />
+    <state width="1878" height="296" key="GridCell.Tab.0.right" timestamp="1609322546805">
       <screen x="0" y="25" width="1920" height="1083" />
     </state>
-    <state width="1429" height="296" key="GridCell.Tab.0.right/0.25.1920.1083@0.25.1920.1083" timestamp="1609319782726" />
+    <state width="1878" height="296" key="GridCell.Tab.0.right/0.25.1920.1083@0.25.1920.1083" timestamp="1609322546805" />
   </component>
 </project>

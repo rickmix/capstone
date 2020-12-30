@@ -31,6 +31,8 @@ class LoginScreen : Fragment() {
         getActivity()?.setTitle("Rick Chat");
         session = SessionManager(requireContext())
 
+//        viewModel.deleteAllContacts()
+
         if(session.isLoggedIn()) {
             findNavController().navigate(
                 R.id.action_FirstFragment_to_homeScreen

@@ -89,10 +89,15 @@ class HomeScreen : Fragment() {
         rvHomePage.addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
 
         userAdapter.onItemClick = { contact ->
-            setFragmentResult(REQ_REMINDER_KEY, bundleOf(Pair(BUNDLE_REMINDER_KEY, contact.phone)))
+            val args = Bundle()
+            args.putString(ARG_PHONE_NUMBER, contact.phone)
+            args.putString(ARG_USERNAME_OTHER, contact.username)
+
+            //setFragmentResult(REQ_REMINDER_KEY, bundleOf(Pair(BUNDLE_REMINDER_KEY, contact.phone)))
 
             findNavController().navigate(
-                R.id.action_homeScreen_to_chatFragment
+                R.id.action_homeScreen_to_chatFragment,
+                args
             )
         }
 
@@ -110,6 +115,7 @@ class HomeScreen : Fragment() {
                 val list: MutableList<User> = ArrayList()
                 var userList: List<User> = allUsers
 
+                userData
                 //i = user 123 WITH Friends 7, 8
 //                if(userData.friends) {
                     for (i in userData.friends) {
