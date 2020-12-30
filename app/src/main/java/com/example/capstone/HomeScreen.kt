@@ -97,6 +97,7 @@ class HomeScreen : Fragment() {
         }
 
         createItemTouchHelper().attachToRecyclerView(rvHomePage)
+//        session.logOutUser()
         observeAddUser()
     }
 
@@ -106,20 +107,20 @@ class HomeScreen : Fragment() {
         viewModel.getUserData(ownNumber).observe(viewLifecycleOwner, Observer { userData ->
             viewModel.users.observe(viewLifecycleOwner, Observer { allUsers ->
                 this@HomeScreen.users.clear()
-                var newList: MutableList<String> = ArrayList()
                 val list: MutableList<User> = ArrayList()
                 var userList: List<User> = allUsers
 
                 //i = user 123 WITH Friends 7, 8
-                for (i in userData.friends) {
-                    //User = The user to compare with
-                    for (user in userList) {
-                        if (i == user.id.toString()) {
-                            list.add(user)
-                            newList.add("test")
+//                if(userData.friends) {
+                    for (i in userData.friends) {
+                        //User = The user to compare with
+                        for (user in userList) {
+                            if (i == user.id.toString()) {
+                                list.add(user)
+                            }
                         }
                     }
-                }
+//                }
 
                 this@HomeScreen.users.addAll(list)
                 userAdapter.notifyDataSetChanged()

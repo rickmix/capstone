@@ -69,24 +69,6 @@ class ChatFragment : Fragment() {
         rvChatList.addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
         setupChat()
 //        createItemTouchHelper().attachToRecyclerView(rvContactList)
-//        observeAddUser()
-    }
-
-    private fun observeAddUser() {
-//        viewModel.users.observe(viewLifecycleOwner, Observer { userData ->
-//            this@ContactList.users.clear()
-//
-//            var newList: ArrayList<User> = ArrayList()
-//
-//            for(i in userData) {
-//                if(i.phone != session.getUserPhone()) {
-//                    newList.add(i)
-//                }
-//            }
-//
-//            this@ContactList.users.addAll(newList)
-//            contactListAdapter.notifyDataSetChanged()
-//        })
     }
 
     private fun setupChat() {
@@ -141,15 +123,13 @@ class ChatFragment : Fragment() {
     private fun addMessage() {
         var message = inputChatMessage.text.toString()
 
-        chatData
-
         viewModel.insertMessage(message, chatData)
 
         viewModel.success.observe(viewLifecycleOwner, androidx.lifecycle.Observer { success ->
             Toast.makeText(activity,"Message send!",Toast.LENGTH_SHORT).show()
+            view?.clearFocus()
+            chatAdapter.notifyDataSetChanged()
         })
-
-        chatAdapter.notifyDataSetChanged()
     }
 
 }

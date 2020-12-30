@@ -8,7 +8,7 @@ class ChatRepository (context: Context) {
     private val chatDao: ChatDao
 
     init {
-        val database = ChatRoomDatabase.getDatabase(context)
+        val database = UserRoomDatabase.getDatabase(context)
         chatDao = database!!.chatDao()
     }
 

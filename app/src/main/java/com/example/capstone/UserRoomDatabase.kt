@@ -11,10 +11,11 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import java.util.*
 
-@Database(entities = [User::class], version = 6, exportSchema = false)
+@Database(entities = [User::class, Chat::class], version = 7, exportSchema = false)
 @TypeConverters(Converters::class)
 abstract class UserRoomDatabase: RoomDatabase() {
     abstract fun userDao(): UserDao
+    abstract fun chatDao(): ChatDao
 
     companion object {
         private const val DATABASE_NAME = "USER_DATABASE"

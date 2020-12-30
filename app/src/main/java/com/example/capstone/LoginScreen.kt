@@ -69,20 +69,23 @@ class LoginScreen : Fragment() {
     private fun addUser() {
         val userPhone = inputPhone.text.toString()
         var alreadyExists = false;
+        var userName: String = ""
 
-        view?.clearFocus();
+        view?.clearFocus()
 
         if(users.isNotEmpty()) {
             for (i in users) {
                 if (i.phone == userPhone) {
                     alreadyExists = true
+                    userName = i.username
                 }
             }
 
             if (alreadyExists) {
                 Toast.makeText(context, "User already exists", Toast.LENGTH_SHORT).show()
                 //@TODO Change to username
-                session.createLoginSession(userPhone, userPhone)
+                Toast.makeText(context, "Welcome $userName", Toast.LENGTH_SHORT).show()
+                session.createLoginSession(userPhone, userName)
                 findNavController().navigate(
                     R.id.action_FirstFragment_to_homeScreen
                 )
