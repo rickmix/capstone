@@ -20,9 +20,9 @@ interface UserDao {
     @Query("SELECT * FROM userTable WHERE phone = :phoneNumber")
     fun getUserData(phoneNumber: String): LiveData<User>
 
-    @Delete
+    @Update
     suspend fun deleteUser(user: User)
 
-    @Query("DELETE FROM userTable")
-    suspend fun deleteAllUsers()
+    @Update
+    suspend fun deleteAllUsers(user: User)
 }

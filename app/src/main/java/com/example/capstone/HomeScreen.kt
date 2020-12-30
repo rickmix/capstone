@@ -18,9 +18,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.fragment_home_screen.*
 
-const val REQ_REMINDER_KEY = "req_chat"
-const val BUNDLE_REMINDER_KEY = "bundle_chat"
-
 class HomeScreen : Fragment() {
 
     private val users = arrayListOf<User>()
@@ -59,9 +56,14 @@ class HomeScreen : Fragment() {
         return when (item.itemId) {
             R.id.delete_history -> {
                 Toast.makeText(context, "Removed all contacts", Toast.LENGTH_SHORT).show()
-                viewModel.deleteAllContacts()
-                //@TODO DELETE FUNCTION IS ONLY FOR CHATS NOT USERS
-                session.logOutUser()
+                viewModel.users.observe(viewLifecycleOwner, Observer { allUsers ->
+                    for(i in allUsers) {
+                        if(i.phone == session.getUserPhone()) {
+                            viewModel.deleteAllContacts(i)
+                            break
+                        }
+                    }
+                })
                 true
             }
             R.id.logout -> {
@@ -149,7 +151,14 @@ class HomeScreen : Fragment() {
             override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
                 val position = viewHolder.adapterPosition
                 val userToDelete = users[position]
-                viewModel.deleteUser(userToDelete)
+                viewModel.users.observe(viewLifecycleOwner, Observer { allUsers ->
+                    for(i in allUsers) {
+                        if(i.phone == session.getUserPhone()) {
+                            viewModel.deleteUser(userToDelete, i)
+                            break
+                        }
+                    }
+                })
             }
         }
         return ItemTouchHelper(callback)

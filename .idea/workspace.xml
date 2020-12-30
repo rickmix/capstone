@@ -13,9 +13,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/capstone/ChatFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/capstone/ChatFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/capstone/HomeScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/capstone/HomeScreen.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/capstone/LoginScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/capstone/LoginScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/capstone/UserDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/capstone/UserDao.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/capstone/UserRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/capstone/UserRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/capstone/UserViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/capstone/UserViewModel.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,21 +125,25 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1878" height="296" key="GridCell.Tab.0.bottom" timestamp="1609322546806">
+    <state x="816" y="336" key="AndroidProcessChooserDialog" timestamp="1609329432984">
       <screen x="0" y="25" width="1920" height="1083" />
     </state>
-    <state width="1878" height="296" key="GridCell.Tab.0.bottom/0.25.1920.1083@0.25.1920.1083" timestamp="1609322546806" />
-    <state width="1878" height="296" key="GridCell.Tab.0.center" timestamp="1609322546805">
+    <state x="816" y="336" key="AndroidProcessChooserDialog/0.25.1920.1083@0.25.1920.1083" timestamp="1609329432984" />
+    <state width="1878" height="365" key="GridCell.Tab.0.bottom" timestamp="1609329381010">
       <screen x="0" y="25" width="1920" height="1083" />
     </state>
-    <state width="1878" height="296" key="GridCell.Tab.0.center/0.25.1920.1083@0.25.1920.1083" timestamp="1609322546805" />
-    <state width="1878" height="296" key="GridCell.Tab.0.left" timestamp="1609322546805">
+    <state width="1878" height="365" key="GridCell.Tab.0.bottom/0.25.1920.1083@0.25.1920.1083" timestamp="1609329381010" />
+    <state width="1878" height="365" key="GridCell.Tab.0.center" timestamp="1609329381009">
       <screen x="0" y="25" width="1920" height="1083" />
     </state>
-    <state width="1878" height="296" key="GridCell.Tab.0.left/0.25.1920.1083@0.25.1920.1083" timestamp="1609322546805" />
-    <state width="1878" height="296" key="GridCell.Tab.0.right" timestamp="1609322546805">
+    <state width="1878" height="365" key="GridCell.Tab.0.center/0.25.1920.1083@0.25.1920.1083" timestamp="1609329381009" />
+    <state width="1878" height="365" key="GridCell.Tab.0.left" timestamp="1609329381009">
       <screen x="0" y="25" width="1920" height="1083" />
     </state>
-    <state width="1878" height="296" key="GridCell.Tab.0.right/0.25.1920.1083@0.25.1920.1083" timestamp="1609322546805" />
+    <state width="1878" height="365" key="GridCell.Tab.0.left/0.25.1920.1083@0.25.1920.1083" timestamp="1609329381009" />
+    <state width="1878" height="365" key="GridCell.Tab.0.right" timestamp="1609329381009">
+      <screen x="0" y="25" width="1920" height="1083" />
+    </state>
+    <state width="1878" height="365" key="GridCell.Tab.0.right/0.25.1920.1083@0.25.1920.1083" timestamp="1609329381009" />
   </component>
 </project>

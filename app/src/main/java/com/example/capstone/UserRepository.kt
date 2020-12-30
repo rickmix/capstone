@@ -24,8 +24,8 @@ class UserRepository (context: Context) {
         userDao.deleteUser(user);
     }
 
-    suspend fun deleteAllUsers() {
-        userDao.deleteAllUsers()
+    suspend fun deleteAllUsers(user: User) {
+        userDao.deleteAllUsers(user)
     }
 
     suspend fun insertNewUser(user: User) {

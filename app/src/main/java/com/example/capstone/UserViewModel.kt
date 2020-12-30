@@ -82,18 +82,36 @@ class UserViewModel(application: Application): AndroidViewModel(application) {
         }
     }
 
-    fun deleteUser(user: User) {
+    fun deleteUser(user: User, ownUser: User) {
+
+
+        for((index, i) in ownUser.friends.withIndex()) {
+            if(i == user.id.toString()) {
+                ownUser.friends.removeAt(index)
+                break
+            }
+        }
+
         mainScope.launch {
             withContext(Dispatchers.IO) {
-                userRepository.deleteUser(user)
+                userRepository.deleteUser(ownUser)
             }
         }
     }
 
-    fun deleteAllContacts() {
+    fun deleteAllContacts(user: User) {
+
+        var newUser = User(
+            username = user.username,
+            phone = user.phone,
+            img = user.img,
+            friends = ArrayList(),
+            id = user.id
+        )
+
         mainScope.launch {
             withContext(Dispatchers.IO) {
-                userRepository.deleteAllUsers()
+                userRepository.deleteAllUsers(newUser)
             }
         }
     }
